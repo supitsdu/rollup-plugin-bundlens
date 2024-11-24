@@ -4,7 +4,7 @@ import esbuild from "rollup-plugin-esbuild"
 
 import { reportDetails } from "./src/main"
 
-const external = ["crypto", "path", "node:zlib", "node:util"]
+const external = ["node:path", "node:zlib", "node:util"]
 
 export default [
 	{
