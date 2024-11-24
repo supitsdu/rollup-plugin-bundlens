@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-bundalyze",
+  "name": "rollup-plugin-bundlens",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/main.cjs",
@@ -23,7 +23,7 @@
   "keywords": [
     "rollup",
     "plugin",
-    "bundalyze",
+    "bundlens",
     "metrics",
     "bundle"
   ],
