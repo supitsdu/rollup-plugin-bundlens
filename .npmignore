@@ -2,6 +2,7 @@ coverage
 src
 test
 build
+.github
 mock
 bun.lockb
 .gitignore
