@@ -1,6 +1,7 @@
 {
   "name": "rollup-plugin-bundlens",
-  "version": "0.1.0",
+  "description": "Reports metrics of Rollup.js bundles",
+  "version": "0.1.1",
   "type": "module",
   "main": "./dist/main.cjs",
   "module": "./dist/main.mjs",
@@ -13,23 +14,49 @@
     }
   },
   "scripts": {
-    "check-types": "tsc --noEmit",
-    "lint:fix": "biome check --write",
-    "lint": "biome ci",
-    "format": "prettier --write *.md",
+    "dev": "rollup -c rollup.config.ts --configPlugin typescript --watch",
     "build": "rollup -c rollup.config.ts --configPlugin typescript",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "biome ci",
+    "lint:fix": "biome check --write",
+    "format": "prettier --write *.md"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "rollup": "^4.27.3"
   },
   "keywords": [
     "rollup",
     "plugin",
     "bundlens",
     "metrics",
-    "bundle"
+    "bundle",
+    "bundle-size",
+    "size",
+    "analysis",
+    "gzip",
+    "performance",
+    "optimization"
   ],
-  "author": "Eduardo M. Santos <contact@supitsdu.me>",
+  "author": "Eduardo M. Santos",
   "license": "MIT",
-  "description": "Reports metrics of Rollup.js bundles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supitsdu/rollup-plugin-bundlens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supitsdu/rollup-plugin-bundlens/issues"
+  },
+  "homepage": "https://github.com/supitsdu/rollup-plugin-bundlens/",
   "dependencies": {
     "rollup": "^4.27.3"
   },
