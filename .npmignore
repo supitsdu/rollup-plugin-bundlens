@@ -1,0 +1,17 @@
+coverage
+src
+test
+build
+mock
+bun.lockb
+.gitignore
+.eslintrc.json
+.prettierrc
+jest.config.ts
+rollup.config.ts
+tsconfig.json
+biome.json
+.vscode
+*.tgz
+*.webp
+*.svg
